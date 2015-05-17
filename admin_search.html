@@ -1,60 +1,81 @@
 <!doctype html>
 <html>
-	<head>
-		<title>Administrator Tools</title>
-	</head>
-	
-	<body>
-		<section_title>Search</section_title>
-		
-		<br>
-		
-		<parameter_title>Name</parameter_title>
-		
-		<br>
-		
-		<label>First</label>
-		<input type="text" id="first_name">
-		<label>Last</label>
-		<input type="text" id="last_name">
-		
-		<br>
-		<br>
-		
-		<parameter_title>Address</parameter_title>
-		
-		<br>
-		
-		<label>Street</label>
-		<input type="text" id="street_name">
-		<br>
-		<label>City</label>
-		<input type="text" id="city">
-		<label>State</label>
-		<input type="text" id="state">
-		<label>Zip Code</label>
-		<input type="number" id="zip_code">
-		
-		<br>
-		<br>
-		
-		<parameter_title>Contact Info</parameter_title>
-		
-		<br>
-		
-		<label>Home Phone Number</label>
-		<input type="number" id="home_phone_number">
-		<br>
-		<label>Cell Phone Number</label>
-		<input type="number" id="cell_phone_number">
-		<br>
-		<label>Email</label>
-		<input type="text" id="email_name">@<input type="text" id="email_server">
-		
+    <head>
+        <script src="server.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <title>Administrator Tools</title>
+        <style>
+            table, th, td {
+                border: 1px solid black;
+                border-collapse: collapse;
+            }
+            th, td {
+                padding: 5px;
+            }
+        </style>
+    </head>
 
-		<br>
+    <body style="background-color: #ffebcd">
 
-		<button type="button" id="search_button" onclick="search(first_name, last_name, street_name, city, state, zip_code, home_phone_number, cell_phone_number, email_name)">Search</button>
-	</body>
-	
+
+    <section_title>***EMPLOYEE SEARCH FUNCTION***</section_title>
+
+    <br>
+    ***FOR EMPLOYEE USE ONLY, USERNAME AND PASSWORD PROTECTED***
+    <form action="form.html">
+        <input type="submit" value="Back to submission form">
+    </form>
+    <br>
+
+
+    <br>
+
+    <label>Name</label>
+    <input type="text" id="ball_name">
+    <br>
+    <br>
+<!--
+    <parameter_title>Address</parameter_title>
+
+    <br>
+
+    <label>Street</label>
+    <input type="text" id="street_name">
+    <br>
+    <label>City</label>
+    <input type="text" id="city">
+    <label>State</label>
+    <input type="text" id="state">
+    <label>Zip Code</label>
+    <input type="number" id="zip_code">
+
+    <br>
+    <br>
+
+    <parameter_title>Contact Info</parameter_title>
+
+    <br>
+
+    <label>Home Phone Number</label>
+    <input type="number" id="home_phone_number">
+    <br>
+    <label>Cell Phone Number</label>
+    <input type="number" id="cell_phone_number">
+    <br>
+    <label>Email</label>
+    <input type="text" id="email_name">@<input type="text" id="email_server">
+
+-->
+    <br>
+
+    <button type="button" id="search_button"
+            onclick="search()">
+        Search
+    </button>
+    <br>
+
+    <div class="output" id="output"/>
+
+    </body>
+
 </html>

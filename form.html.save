@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
-<script src="server.js"></script>
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
 <head lang="en">
     <meta charset="UTF-8">
     <title></title>
@@ -12,8 +11,7 @@
   <body style="background-color: #ffebcd">
   <div class="fields">
     <div>
-
-	<form>      
+      
       <div style="position:absolute;left:63px">Name: <input type="text" id="ball_name" style="width:350px"/></div>
    <div style="position:absolute;left:480px"> Date: <input type="date" id="ball_date" class="endofline"/></div>
         
@@ -65,10 +63,8 @@
 
       <div style="position:absolute;left:69px">Price: <input type="text" id="ball_price" style="width:123px"/></div>
       <div style="position:absolute;left:240px">Completed by: <input type="text" id="ball_employee"/></div>
-	</form>
 
-<div style="position:absolute;top:550px;left:110px">
-<input type="submit" onClick="saveData()">Submit</button><div>
+<div style="position:absolute;top:550px;left:110px"><button type="submitButton" onClick="saveData()">Submit</button><div>
 <form action="admin_search.html">
 <input type="submit" value="Search Database (Employees Only)">
 </form>
